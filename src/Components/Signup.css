@@ -1,0 +1,15 @@
+.SignupWrapper{
+    display: flex;
+    justify-content: center;
+}
+.Signup-card{
+    margin-top: 1.5rem;
+}
+.upload_Image{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}.signUpToSignin{
+    display: flex;
+    justify-content: center;
+}

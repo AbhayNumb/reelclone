@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Signup from './Components/Signup'
+import Feed from './Components/Feed';
+import PrivateRoute from './Components/PrivateRoute';
+import ResetPassword from './Components/ResetPassword';
+import Profile from './Components/Profile';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Login from './Components/Login';
+import { AuthProvider } from './Context/AuthContext';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <AuthProvider>
+          <PrivateRoute path='/' exact component={Feed}/>
+          <PrivateRoute path='/profile' exact component={Profile}/>
+          <Route path='/resetpassword'component={ResetPassword}/>
+          <Route path='/signup' exact component={Signup} />
+          <Route path='/login' exact component={Login} />
+        </AuthProvider>
+      </Switch>
+    </Router>
+
   );
 }
 

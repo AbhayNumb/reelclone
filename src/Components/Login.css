@@ -1,0 +1,18 @@
+.LoginWrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+.Login{
+    margin-top: 5rem;
+    margin-right: 7rem;
+}
+.slider{
+    width: 14rem;
+    position: absolute;
+}
+.slider-cont{
+    top: 6.3rem;
+    left: 9.2rem;
+    position: relative;
+}

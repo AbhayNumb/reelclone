@@ -1,0 +1,24 @@
+.comment-cont{
+    display: 'flex';
+}
+.comment-cont1{
+    width: 50%;
+}
+.comm-cont{
+    
+    position: absolute;
+    top: 32rem;
+    left: 57.2vw;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 480px) {
+    .comm-cont{
+        position:absolute;
+        top: 28rem;
+        left: 16rem;
+    }
+    .modal-video{
+        display: none;
+    }
+}

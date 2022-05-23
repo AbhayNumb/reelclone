@@ -1,0 +1,10 @@
+.bar-img{
+    height: 2.5rem;
+    margin-left: 38rem;
+}
+@media (max-width: 480px) {
+    .bar-img{
+        height:2rem;
+        margin-left: 2rem;
+    }
+}
